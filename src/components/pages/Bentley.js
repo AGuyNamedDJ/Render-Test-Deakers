@@ -5,6 +5,12 @@ import { Link, useOutletContext } from "react-router-dom";
 // Functional Component
 const Bentley = () => {
     const { bentleyState: [bentley, setBentley] } = useOutletContext();
+
+    const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+      });
+
     {/* This return format is to map all. */}
 
     return(
@@ -18,11 +24,11 @@ const Bentley = () => {
                                 <img src={car.imageOne} className="car-image" alt="car"></img>
                             </div>
                             <div className="car-details-container">
-                                <p className="car-name">{car.year} {car.make} {car.model}</p>
+                                <p id="car-name">{car.year} {car.make} {car.model}</p>
                                 <br></br>
-                                <p className="car-price">Price: ${car.price}</p>
-                                <p className="car-mileage">Mileage: {car.mileage}</p>
-                                <p className="car-exterior-color">{car.exteriorColor}</p>
+                                <p id="car-price">Price: {formatter.format(car.price)} | Mileage: {car.mileage}</p>
+                                <br></br>
+                                <button id="view-listing-button"><Link className="link" to={`/inventory/bentley/${car.carId}`}>View Listing</Link></button>
                             </div>
                             <br></br>
                             <br></br>
@@ -35,6 +41,7 @@ const Bentley = () => {
          : "No Vehicles to display."
     )
 };
+
 
 // Export
 export default Bentley;

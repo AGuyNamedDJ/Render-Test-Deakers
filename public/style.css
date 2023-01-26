@@ -4,6 +4,10 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#link{
+    text-decoration: none;
+}
+
 /* Navbar */
 .navbar{
     background-color: black;
@@ -233,7 +237,11 @@ p {
 .car-listing-box {
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 85vw;
+    margin: 1vh 1vw;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
@@ -248,41 +256,51 @@ p {
     height: 100%;
     object-fit: cover;
     row-gap: 10vh;
+    box-shadow: 5px 5px 10px 0px #ccc;
 }
 
 .car-details-container {
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #CBCBCB;
     width: 50%;
+    box-shadow: 5px 5px 10px 0px #ccc;
+    text-decoration: none;
+    align-items: center;
 }
 
-.car-name, .car-price{
-    font-size: 3vw;
+#car-name{
+    font-size: 4vw;
     color: black;
     text-decoration: none;
     margin:1vh 0;
     text-align: center;
     margin-left: 5vw;
+    margin-top: 2vh;
     margin-right: 5vw;
 }
 
-.car-exterior-color, .mileage {
-    font-size: 1.5vw;
-    color: black;
-    text-decoration: none;
-    margin:1vh 0;
-    text-align: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-
-.car-price {
+#car-mileage{
     font-size: 1.5vw;
     color: black;
     margin:1vh 0;
     text-align: center;
 }
-    
-    
-.car-exterior-color {
-    text-transform: capitalize;
+
+#car-price {
+    font-size: 2.3vw;
+    color: black;
+    margin:1vh 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
 }
+
+#view-listing-button{
+    font-size: 2.3vw;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+}
+    
