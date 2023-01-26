@@ -1,17 +1,40 @@
 body{
     background-color: black;
     color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
 
 /* Navbar */
 .navbar{
+    background-color: black;
     display: flex;
     justify-content: center;
+    padding-bottom: 15px;
 }
 
 #navbar-text{
     color: white;
+    font-size: 25px;
+    padding: 0 30px;
+    padding-top: 15px;
+    text-align: center;
     text-decoration: none;
 }
 
+/* Homepage */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-subtitle{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.homepage-title{
+    font-size: 8vw;
+    text-align: center;
+}
