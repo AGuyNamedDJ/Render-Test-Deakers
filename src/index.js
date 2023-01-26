@@ -11,24 +11,24 @@ import FetchForHomePage from "./components/utilities/FetchForHomepage";
 import HomePage from "./components/utilities/HomePage";
 
 // Import Pages
-import Bentley from "./components/pages/Vehicles/Bentley"
-import BentleyDetail from "./components/pages/Vehicles/BentleyDetail";
-import Bugatti from "./components/pages/Vehicles/Bugatti";
-import BugattiDetail from "./components/pages/Vehicles/BugattiDetail";
+import Bentley from "./components/pages/Bentley"
+import BentleyDetail from "./components/pages/BentleyDetail";
+import Bugatti from "./components/pages/Bugatti";
+import BugattiDetail from "./components/pages/BugattiDetail";
 import Financing from "./components/pages/Financing";
-import Ferrari from "./components/pages/Vehicles/Ferrari";
-import FerrariDetail from "./components/pages/Vehicles/FerrariDetail";
-import Koenigsegg from "./components/pages/Vehicles/Koenigsegg";
-import KoenigseggDetail from "./components/pages/Vehicles/KoenigseggDetail";
-import Lamborghini from "./components/pages/Vehicles/Lamborghini";
-import LamborghiniDetail from "./components/pages/Vehicles/LamborghiniDetail";
-import Mclaren from "./components/pages/Vehicles/McLaren";
-import MclarenDetail from "./components/pages/Vehicles/McLarenDetail";
+import Ferrari from "./components/pages/Ferrari";
+import FerrariDetail from "./components/pages/FerrariDetail";
+import Koenigsegg from "./components/pages/Koenigsegg";
+import KoenigseggDetail from "./components/pages/KoenigseggDetail";
+import Lamborghini from "./components/pages/Lamborghini";
+import LamborghiniDetail from "./components/pages/LamborghiniDetail";
+import Mclaren from "./components/pages/McLaren";
+import MclarenDetail from "./components/pages/McLarenDetail";
 import NewsAndEvents from "./components/pages/NewsAndEvents";
-import Porsche from "./components/pages/Vehicles/Porsche";
-import PorscheDetail from "./components/pages/Vehicles/PorscheDetail";
-import RollsRoyce from "./components/pages/Vehicles/RollsRoyce";
-import RollsRoyceDetail from "./components/pages/Vehicles/RollsRoyceDetail";
+import Porsche from "./components/pages/Porsche";
+import PorscheDetail from "./components/pages/PorscheDetail";
+import RollsRoyce from "./components/pages/RollsRoyce";
+import RollsRoyceDetail from "./components/pages/RollsRoyceDetail";
 import ServiceAndParts from "./components/pages/ServiceAndParts";
 import Vehicles from "./components/pages/Vehicles";
 
