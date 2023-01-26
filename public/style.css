@@ -21,7 +21,7 @@ body{
 
 #navbar-text{
     color: white;
-    font-size: 25px;
+    font-size: 2.5vw;
     padding: 0 30px;
     padding-top: 15px;
     text-align: center;
@@ -37,7 +37,7 @@ body{
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 7vh;
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@ p {
 #about-title {
     font-size: 5vw;
     font-weight: bold;
-    margin-top: 8vw;
+    margin-top: 10vw;
 }
     
 #about-text {

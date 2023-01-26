@@ -14,9 +14,6 @@ const HomePage = () => {
                     <p id="homepage-title">Car Haven</p>
                 </div>
             </div>
-            <footer className="footer-box">
-                <div id="footer-text">Below</div>
-            </footer>
         </div>
     )
 };
