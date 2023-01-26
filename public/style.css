@@ -11,6 +11,11 @@ body{
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
+    position: fixed; /* Add this line to make the navbar stay in place */
+    top: 0; /* Add this line to make the navbar stay at the top of the page */
+    left: 0; /* Add this line to make the navbar stay on the left side of the page */
+    right: 0; /* Add this line to make the navbar stretch across the entire width of the page */ 
+    z-index: 1; /* Add this line to make sure the navbar appears on top of other elements */
 }
 
 #navbar-text{
@@ -22,19 +27,70 @@ body{
     text-decoration: none;
 }
 
+#navbar-text:hover{
+    color: rgba(255, 0, 0, 0.7);
+}
+
+/* Footer */
+.footer-box{
+    background-color: black;
+    width: 100%;
+    height: -2vw;
+}
+
+#footer-text{
+    font-size: 40px;
+}
+
 /* Homepage */
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
-.homepage-subtitle{
+.hp-text-box{
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+    height: 18vw;
+    width: 100vw;
+    margin-top: -2.5vw; 
+}
+
+#hp-subtext-box{
+    color: black;
+    padding-top: 2vw;
+}
+
+#homepage-subtitle{
     font-size: 3vw;
     text-align: center;
 }
 
-.homepage-title{
+#homepage-title{
     font-size: 8vw;
     text-align: center;
+}
+
+/* About Page */
+.about-container {
+    text-align: center;
+    margin: 50px;
+}
+    
+#about-title {
+    font-size: 5vw;
+    font-weight: bold;
+    margin-top: 8vw;
+}
+    
+#about-text {
+    font-size: 2vw;
+    line-height: 1.7;
+    margin-bottom: 3vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }

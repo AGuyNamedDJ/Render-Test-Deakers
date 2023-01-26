@@ -8,8 +8,15 @@ const HomePage = () => {
             <div className="video-container">
                 <video src = "https://f1rstmotors.com/wp-content/uploads/2022/12/website-video_resized.mp4" loop autoPlay muted playsInline></video>
             </div>
-            <p className="homepage-subtitle">Welcome to</p>
-            <p className="homepage-title">Car Haven</p>
+            <div className="hp-text-box">
+                <div id="hp-subtext-box">
+                    <p id="homepage-subtitle">Welcome to</p>
+                    <p id="homepage-title">Car Haven</p>
+                </div>
+            </div>
+            <footer className="footer-box">
+                <div id="footer-text">Below</div>
+            </footer>
         </div>
     )
 };
