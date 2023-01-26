@@ -8,6 +8,7 @@ import AboutUs from "./components/utilities/AboutUs";
 import ContactUs from "./components/utilities/ContactUs";
 import ErrorPage from "./components/utilities/ErrorPage";
 import FetchForHomePage from "./components/utilities/FetchForHomepage";
+import Footer from "./components/utilities/Footer";
 import HomePage from "./components/utilities/HomePage";
 
 // Import Pages
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
             {
                 path: "financing",
                 element: <Financing />
+            },
+            {
+                path: "footer",
+                element: <Footer />
             },
             {
                 path: "inventory/koenigsegg",

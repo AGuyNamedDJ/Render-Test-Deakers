@@ -1,6 +1,7 @@
 // Import
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { Outlet } from "react-router";
 
 // State
@@ -226,6 +227,7 @@ const FetchForHomepage = () => {
                 <Navbar context={contextObject}/>
             </div>
             <Outlet context={contextObject} />
+            <Footer />
         </div>
     )
 };
