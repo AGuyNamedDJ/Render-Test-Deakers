@@ -128,9 +128,10 @@ body{
     background-color: #000000; 
     border: 1px solid #ccc; 
     border-radius: 10px; 
-    margin-top: 20vh;
+    margin-top: 10vh;
     text-align: center;
-    width: 50vw;
+    height: 21vw;
+    width: 35vw;
     }
     
     #contact-form label{
@@ -149,4 +150,20 @@ body{
     font-size: 2vw;
     width: 8vw;
     height: 5vh;
+}
+
+#contact-title{
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 8vw; 
+}
+
+.contact-text{
+    font-size: 2vw;
+    line-height: 2.5vh;
+    margin-right: 12vw;
+    margin-left: 12vw;
+    text-align: center;
 }

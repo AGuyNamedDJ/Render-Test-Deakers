@@ -129,7 +129,7 @@ const router = createBrowserRouter([
                 element: <ServiceAndParts />
             },
             {
-                path: "vehicles",
+                path: "inventory",
                 element: <Vehicles />
             },
         ]
