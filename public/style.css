@@ -1,0 +1,469 @@
+body {
+    background-image: url(https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    max-width: 1440px;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+}
+
+#navbar-box {
+    border-radius: 2%;
+    height: 45px;
+    width: 45%;
+    background-color: rgba(196, 189, 189, 0.15);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#navbar-text{
+    display: flex;
+    color: white;
+    font-size: 22px;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    text-shadow: 3px 3px #b6713c;
+}
+
+#navbar-text:hover{
+    color: rgb(175, 80, 80);
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.error-page-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-page-image-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.error-page-subbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -55px;
+}
+
+.error-page-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#error-page-pic{
+    width: 300px;
+}
+
+#error-page-text{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px #b6713c;
+}
+
+#error-page-subtext{
+    font-size: 20px;
+    /* font-style: italic; */
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px #b6713c;
+}
+
+#error-page-button-text{
+    background-color: #b6713c;
+    border-radius: 50%;
+    box-shadow: 2px 9px black;
+    width: 120px;
+    height: 60px;
+    color: white;
+    font-size: 15px;
+    /* font-style: italic; */
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px #b6713c;
+}
+
+#homepage-title{
+    font-size: 150px;
+    font-weight: bold;
+    margin-top: 250px;
+    text-align: center;
+    text-shadow: 3px 4px #b6713c;
+}
+
+#homepage-subtitle{
+    font-size: 40px;
+    font-style: italic;
+    margin-top: -135px;
+    text-align: center;
+    text-shadow: 3px 3px #b6713c;
+}
+
+#title-text{
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 5px #b6713c;
+}
+
+.department-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-row-gap: 40px;
+}
+
+.department-box-breakfast{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 50%;
+}
+
+#department-box-entrees{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 50%;
+}
+
+#department-box-desserts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 50%;
+}
+
+#department-box-sides{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 50%;
+}
+
+#breakfast-main-image{
+    border-radius: 20px;
+    width: 75%;
+}
+
+#entrees-main-image{
+    border-radius: 20px;
+    width: 75%;
+}
+
+#desserts-main-image{
+    border-radius: 20px;
+    width: 75%;
+}
+
+#sides-main-image{
+    border-radius: 20px;
+    width: 75%;
+}
+
+#department-box-text{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 3px 4px #b6713c;
+}
+
+#department-box-subtext{
+    font-size: 20px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    text-shadow: 3px 4px #b6713c;
+    margin-top: 0px;
+}
+
+#recipes-explore{
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 3px 4px #b6713c;
+}
+
+/* Recipe Page */
+.recipe-box{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    /* margin-left: 24px;
+    margin-right: 24px; */
+    /* row-gap: 80px; */
+    justify-content: space-between;
+}
+
+#recipe-image{
+    display: flex;
+    border-radius: 8%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 75px;
+    width: 450px;
+}
+
+#recipe-text{
+    font-size: 60px;
+    text-shadow: 3px 4px #b6713c;
+    margin-top: -10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#recipe-type{
+    font-size: 25px;
+    text-shadow: 3px 4px #b6713c;
+    margin-top: -50px;
+}
+
+#recipe-ttp{
+    font-size: 25px;
+    text-shadow: 3px 4px #b6713c;
+}
+
+#view-recipe-button{
+    text-decoration: none;
+    background-color: #b6713c;
+    color: white;
+    width: 90px;
+    height: 45px;
+    font-size: 20px;
+    box-shadow: 1px 1px black;
+    border-radius: 50%;
+}
+
+/* Recipe Dettail */
+.more-detail{
+    background-color: rgba(215, 215, 215, 0.1);
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+#recipe-detail-name{
+    font-size: 65px;
+    font-weight: bold;
+    margin-left: 20%;
+    text-shadow: 3px 4px #b6713c;
+}
+
+#recipe-detail-description{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: -25px;
+
+}
+
+#recipe-detail-image{
+    border-radius: 8%;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#recipe-detail-ingredients{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+#recipe-detail-instructions{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#recipe-detail-subtitle{
+    font-size: 45px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-shadow: 3px 4px #b6713c;
+}
+
+#go-back-button{
+    display: block;
+    margin: 0 auto;
+    color: white;
+    box-shadow: 2px 3px black;
+    background-color: #b6713c;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 110px;
+    height: 55px;
+}
+
+/* About Page */
+.about-us-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3%;
+    background-color: rgba(215, 215, 215, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c9c9c9;
+}
+
+.about-us-header {
+    font-size: 60px;
+    text-shadow: 3px 4px #b6713c;
+    margin-bottom: 2%;
+}
+
+.about-us-description {
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow: 3px 4px #b6713c;
+    margin-bottom: 3%;
+    margin-top: 30px;
+}
+
+/* Blog Page */
+/* Blog Container */
+.blog-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    text-align: center;
+    /* padding: 3%; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c9c9c9;
+    background-color: rgba(215, 215, 215, 0.1);
+    /* margin-left: 100px;
+    margin-right: 50px; */
+}
+
+/* Blog Header */
+.blog-header {
+    font-size: 60px;
+    text-shadow: 3px 4px #b6713c;
+    margin-bottom: 2%;
+}
+
+/* Blog Section */
+.blog-section {
+    margin-bottom: 50px;
+}
+
+/* Blog Section Title */
+.blog-section-title {
+    font-size: 30px;
+    text-shadow: 3px 4px #b6713c;
+    margin-bottom: 10px;
+}
+
+/* Blog Section Date */
+.blog-section-date {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 3px 4px #b6713c;
+}
+
+/* Blog Section Description */
+.blog-section-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: left;
+    text-shadow: 3px 4px #b6713c;
+    font-size: 20px;
+}
+
+/* Blog Section List */
+.blog-section-list {
+    list-style-type: square;
+    text-align: left;
+    font-size: 1.2em;
+    text-shadow: 3px 4px #b6713c;
+    font-size: 20px;
+}
+
+/* Search Page */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-header {
+    font-size: 70px;
+    text-shadow: 3px 4px #b6713c;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3e8e41;
+}
+
+.search-results {
+    margin-top: 2rem;
+    width: 80%;
+    list-style: none;
+}
+
+.search-result {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
