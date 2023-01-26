@@ -16,6 +16,8 @@ body{
     left: 0; /* Add this line to make the navbar stay on the left side of the page */
     right: 0; /* Add this line to make the navbar stretch across the entire width of the page */ 
     z-index: 1; /* Add this line to make sure the navbar appears on top of other elements */
+    width: 100vw;
+    height: 3.25vh;
 }
 
 #navbar-text{
@@ -93,4 +95,58 @@ body{
     margin-bottom: 3vw;
     margin-left: 8vw;
     margin-right: 8vw;
+}
+
+/* Error Page */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* takes up the full height of the viewport */
+    width: 100vw; /* takes up the full width of the viewport */
+}
+
+.error-message {
+    font-size: 2vw; /* adjusts font-size to 5% of the viewport width */
+    color: white;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    text-align: center;
+}
+
+.error-image {
+    width: 50vw;
+    max-width: 500px; 
+    margin-bottom: 3vw;
+}
+
+/* Contact Us */
+#contact-form{
+    margin: 5vh auto; /* Center the form on the page and give it a 5vh margin */
+    padding: 5vw;
+    background-color: #000000; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    margin-top: 20vh;
+    text-align: center;
+    width: 50vw;
+    }
+    
+    #contact-form label{
+    font-size: 2vw; 
+    font-weight: bold;
+    margin-bottom: 1vh; 
+    }
+    
+    #contact-form input[type="text"], #contact-form input[type="email"]{
+    padding: 0.5vw; /* Add some padding to the text input fields */
+    margin-bottom: 2vh; /* Add some margin to the bottom of the text input fields */
+    border-radius: 5px; /* Rounded corners for the text input */
+}
+
+#submit-button{
+    font-size: 2vw;
+    width: 8vw;
+    height: 5vh;
 }
