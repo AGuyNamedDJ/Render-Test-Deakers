@@ -227,6 +227,7 @@ const FetchForHomepage = () => {
                 <Navbar context={contextObject}/>
             </div>
             <Outlet context={contextObject} />
+            <br></br>
             <Footer />
         </div>
     )
