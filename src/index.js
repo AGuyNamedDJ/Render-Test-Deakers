@@ -81,27 +81,27 @@ const router = createBrowserRouter([
                 element: <Financing />
             },
             {
-                path: "vehicles/koenigsegg",
+                path: "inventory/koenigsegg",
                 element: <Koenigsegg />
             },
             {
-                path: "/vehicles/koenigsegg/:carId",
+                path: "/inventory/koenigsegg/:carId",
                 element: <KoenigseggDetail />
             },
             {
-                path: "/vehicles/lamborghini",
+                path: "/inventory/lamborghini",
                 element: <Lamborghini />
             },
             {
-                path: "/vehicles/lamborghini/:carId",
+                path: "/inventory/lamborghini/:carId",
                 element: <LamborghiniDetail />
             },
             {
-                path: "/vehicles/mclaren",
+                path: "/inventory/mclaren",
                 element: <Mclaren />
             },
             {
-                path: "/vehicles/mclaren/:carId",
+                path: "/inventory/mclaren/:carId",
                 element: <MclarenDetail />
             },
             {
@@ -109,19 +109,19 @@ const router = createBrowserRouter([
                 element: <NewsAndEvents />
             },
             {
-                path: "/vehicles/porsche",
+                path: "/inventory/porsche",
                 element: <Porsche />
             },
             {
-                path: "/vehicles/porsche/:carId",
+                path: "/inventory/porsche/:carId",
                 element: <PorscheDetail />
             },
             {
-                path: "/vehicles/rollsroyce",
+                path: "/inventory/rollsroyce",
                 element: <RollsRoyce />
             },
             {
-                path: "/vehicles/rollsroyce/:carId",
+                path: "/inventory/rollsroyce/:carId",
                 element: <RollsRoyceDetail />
             },
             {
@@ -129,7 +129,7 @@ const router = createBrowserRouter([
                 element: <ServiceAndParts />
             },
             {
-                path: "inventory",
+                path: "/inventory",
                 element: <Vehicles />
             },
         ]

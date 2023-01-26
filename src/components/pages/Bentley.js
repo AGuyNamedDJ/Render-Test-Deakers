@@ -30,7 +30,7 @@ const Bentley = () => {
 
 
             )
-        }) : "No Recipes to display, our Chefs are busy preparing for you!"
+        }) : "No Vehicles to display."
     )
 };
 

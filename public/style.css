@@ -1,8 +1,7 @@
 body{
     background-color: black;
     color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Navbar */
@@ -166,4 +165,33 @@ body{
     margin-right: 12vw;
     margin-left: 12vw;
     text-align: center;
+}
+
+/* Inventory */
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto; 
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    column-gap: 2vw;
+    row-gap: 4vh;
+    }
+    
+    .manufacturer-logo {
+    width: 25vw;
+    height: 18vh;
+    margin: 1vh 1vw; /* adds a 1% margin to the top and bottom and 1% to the left and right of each image */
+    }
+
+#vehicle-title{
+    font-size: 6vw;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 10vw; 
+    font-weight: 100;
+    text-shadow: 1px 3px rgba(255, 0, 0, 0.522);
 }
