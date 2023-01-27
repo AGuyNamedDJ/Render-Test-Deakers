@@ -262,6 +262,9 @@ p {
 .car-details-container {
     background-color: #CBCBCB;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-shadow: 5px 5px 10px 0px #ccc;
     text-decoration: none;
     align-items: center;
@@ -295,12 +298,29 @@ p {
     width: 30vw;
 }
 
-#view-listing-button{
-    font-size: 2.3vw;
-    color: black;
-    text-align: center;
+#button{
+    background-color: rgba(207, 1, 1, 0.835);
+    font-size: 2vh;
+    align-items: center;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 30vw;
+    text-align: center;
+    text-decoration: none;
 }
+
+#car-details-container-top{
+    flex: 1;
+    display: flex;
+}
+    
+.car-details-container-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
     

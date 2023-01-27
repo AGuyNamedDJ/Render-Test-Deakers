@@ -24,11 +24,13 @@ const Bentley = () => {
                                 <img src={car.imageOne} className="car-image" alt="car"></img>
                             </div>
                             <div className="car-details-container">
-                                <p id="car-name">{car.year} {car.make} {car.model}</p>
-                                <br></br>
-                                <p id="car-price">Price: {formatter.format(car.price)} | Mileage: {car.mileage}</p>
-                                <br></br>
-                                <button id="view-listing-button"><Link className="link" to={`/inventory/bentley/${car.carId}`}>View Listing</Link></button>
+                                <div className="car-details-container-top">
+                                    <p id="car-name">{car.year} {car.make} {car.model}</p>
+                                </div>
+                                <div className="car-details-container-bottom">
+                                    <p id="car-price">Price: {formatter.format(car.price)} | Mileage: {car.mileage}</p>
+                                    <Link to={`/inventory/bentley/${car.carId}`}><button id="button">View Listing</button></Link>
+                                </div>
                             </div>
                             <br></br>
                             <br></br>
