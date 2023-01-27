@@ -146,34 +146,62 @@ p {
 
 /* Contact Us */
 #contact-form{
-    margin: 5vh auto; /* Center the form on the page and give it a 5vh margin */
-    padding: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5vh auto; 
+    padding-left: 8vw;
+    padding-right: 8vw;
     background-color: #000000; 
-    border: 4px solid #ccc; 
+    border: 3px solid #ccc; 
     border-radius: 10px; 
-    margin-top: 10vh;
+    margin-top: 5vh;
     text-align: center;
-    height: 21vw;
+    height: 60vw;
     width: 35vw;
     }
     
     #contact-form label{
     font-size: 2.5vw; 
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-bottom: 1vh; 
     }
     
-    #contact-form input[type="text"], #contact-form input[type="email"]{
-    padding: 0.5vw; /* Add some padding to the text input fields */
-    margin-bottom: 2vh; /* Add some margin to the bottom of the text input fields */
-    border-radius: 5px; /* Rounded corners for the text input */
+#contact-form input[type="text"], #contact-form input[type="email"]{
+        width: 20vw;
+        height: 2vh;
+        font-size: 1.5vh;
+        padding: 0.5vw;
+
 }
+
+/* #contact-form input[type="message"]{
+    width: 20vw;
+    height: 2vh;
+    font-size: 1.5vh;
+    padding: 0.5vw;
+
+} */
 
 #submit-button{
     font-size: 5vw;
     width: 8vw;
     height: 5vh;
 }
+
+.input-text {
+    font-size: 1.5vw;
+    width: 20vw; /* adjust as needed */
+    margin: auto;
+}
+.input-text-message {
+    font-size: 1.5vw;
+    margin-top: 1vh;
+    width: 40vw;
+    height: 25vh;
+}
+
 
 #contact-title{
     font-size: 5vw;
@@ -471,8 +499,9 @@ Copy code
 
 /* Service Page */
 .service-container {
-    width: 80vw;
-    margin: 0 auto;
+    margin-left: 12vw;
+    margin-right: 12vw;
+
 }
 
 .service-header {
@@ -487,11 +516,14 @@ Copy code
     font-size: 2.1vw;
     line-height: 1.5;
     margin-top: 3vh;
-    text-align: justify;
+    text-align: center;
 }
 
 #service-image{
-    display: block;
-    margin: 0 auto;
+    /* display: block; */
+    /* margin: 0 auto; */
     margin-top: 4vh;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    width: 75vw;
 }
