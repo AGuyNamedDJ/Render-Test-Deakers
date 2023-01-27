@@ -106,7 +106,7 @@ const FetchForHomepage = () => {
                 // console.log("Response", response)
                 const ferrariData = await response.json();
                 console.log("Translated Ferrari Data:", ferrariData);
-                setInventory(ferrariData);
+                setFerrari(ferrariData);
             } catch (error) {
                 console.log ("Error ferrari Data!")
                 console.log(error)
@@ -127,7 +127,7 @@ const FetchForHomepage = () => {
                 // console.log("Response", response)
                 const koenigseggData = await response.json();
                 console.log("Translated Koenigsegg Data:", koenigseggData);
-                setInventory(koenigseggData);
+                setKoenigsegg(koenigseggData);
             } catch (error) {
                 console.log ("Error koenigsegg Data!")
                 console.log(error)
@@ -190,7 +190,7 @@ const FetchForHomepage = () => {
                 // console.log("Response", response)
                 const porscheData = await response.json();
                 console.log("Translated Porsche Data:", porscheData);
-                setMclaren(porscheData);
+                setPorsche(porscheData);
             } catch (error) {
                 console.log ("Error Porsche Data!")
                 console.log(error)
@@ -211,7 +211,7 @@ const FetchForHomepage = () => {
                 // console.log("Response", response)
                 const rollsRoyceData = await response.json();
                 console.log("Translated Rolls Data:", rollsRoyceData);
-                setMclaren(rollsRoyceData);
+                setRollsRoyce(rollsRoyceData);
             } catch (error) {
                 console.log ("Error Rolls Data!")
                 console.log(error)
