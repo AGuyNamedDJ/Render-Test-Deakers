@@ -70,47 +70,62 @@ const BentleyDetail = () => {
                     <p>Description can not be viewed</p>
                 }
 
-                {/* vin */}
-                {
-                    localBentley.vin ?
-                    <p id="car-vin">Vin: {localBentley.vin}</p>:
-                    <p>Vin can not be viewed</p>
-                }
-                
-                {/* Mileage */}
-                {
-                    localBentley.mileage ?
-                    <p id="car-mileage">Mileage: {localBentley.mileage}</p>:
-                    <p>Mileage can not be viewed</p>
-                }
+                {/* Color */}
+                <div id="car-color-box">
+                    <div id="car-color-item">
+                        {
+                            localBentley.exteriorColor ?
+                            <p id="car-color">Exterior Color: {localBentley.exteriorColor}</p>:
+                            <p>Exterior Color can not be viewed</p>
+                        }
+                    </div>
+                    {/*Interior Color */}
+                    <div id="car-color-item">
+                        {
+                            localBentley.interiorColor ?
+                            <p id="car-color">Interior Color: {localBentley.interiorColor}</p>:
+                            <p>Interior Color can not be viewed</p>
+                        }
+                    </div>
+                </div>
 
-                {/* BodyType */}
-                {
-                    localBentley.bodyType ?
-                    <p id="car-body-type">Body Type: {localBentley.bodyType}</p>:
-                    <p>Body Type can not be viewed</p>
-                }
-                
-                {/* BodyType */}
-                {
-                    localBentley.exteriorColor ?
-                    <p id="car-exterior-color">Exterior Color: {localBentley.exteriorColor}</p>:
-                    <p>Exterior Color can not be viewed</p>
-                }
+                {/* details */}
+                <div id="car-details-box">
+                    <div id="car-details-items">
+                        {
+                            localBentley.vin ?
+                            <p id="car-vin">VIN: {localBentley.vin}</p>:
+                            <p>Vin can not be viewed</p>
+                        }
+                    </div>
 
-                {/* Interior Color */}
-                {
-                    localBentley.interiorColor ?
-                    <p id="car-interior-color">Interior Color: {localBentley.interiorColor}</p>:
-                    <p>Interior Color can not be viewed</p>
-                }
+                    {/* Mileage */}
+                    <div id="car-details-items">
+                        {
+                            localBentley.mileage ?
+                            <p id="car-vin">Mileage: {localBentley.mileage}</p>:
+                            <p>Mileage can not be viewed</p>
+                        }
+                    </div>
 
-                {/* Doors */}
-                {
-                    localBentley.doors ?
-                    <p id="car-doors">Doors: {localBentley.doors}</p>:
-                    <p>Doors can not be viewed</p>
-                }
+                    {/* BodyType */}
+                    <div id="car-details-items">
+                        {
+                            localBentley.bodyType ?
+                            <p id="car-vin">Body Type: {localBentley.bodyType}</p>:
+                            <p>Body Type can not be viewed</p>
+                        }
+                    </div>
+                    
+                    {/* Doors */}
+                    <div id="car-details-items">
+                        {
+                            localBentley.doors ?
+                            <p id="car-vin">Doors: {localBentley.doors}</p>:
+                            <p>Doors can not be viewed</p>
+                        }
+                    </div>
+                </div>
             </div>
             <div className="car-images-container">
                 <div id="car-images-item">
