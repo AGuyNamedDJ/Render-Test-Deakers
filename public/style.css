@@ -37,6 +37,10 @@ body{
 }
 
 /* Footer */
+
+#push-away-fppter{
+    margin-bottom: 1vh;
+}
 .footer-container {
     position: fixed;
     bottom: 0;
