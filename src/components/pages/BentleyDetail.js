@@ -7,8 +7,7 @@ const BentleyDetail = () => {
     const { bentleyState: [bentley, setBentley] } = useOutletContext();
     const navigate = useNavigate();
     const {carId} = useParams();
-
-    const [localBentley, setLocalBentley] = useState({})
+    const [localBentley, setLocalBentley] = useState({});
 
     // fetchBentleyDetail
     useEffect (() => {
@@ -36,29 +35,131 @@ const BentleyDetail = () => {
     // Return
     return(
         <div className="more-detail">
-            {/* Name */}
-            {
-                localBentley.make ?
-                <p id="recipe-detail-name">{localBentley.make}</p>:
-                <p>Name can not be viewed</p>
-            }
+            <div id="car-detail">
+                {/* year */}
+                {
+                    localBentley.year && localBentley.make && localBentley.model ?
+                    <p id="car-year">{localBentley.year} {localBentley.make} {localBentley.model}</p>:
+                    <p>Description can not be viewed</p>
+                }
+                {/* Make */}
+                {/* {
+                    localBentley.make ?
+                    <p id="recipe-detail-name">{localBentley.make}</p>:
+                    <p>Name can not be viewed</p>
+                } */}
 
-            {/* Description */}
-            {
-                localBentley.model ?
-                <p id="recipe-detail-description">{localBentley.model}</p>:
-                <p>Description can not be viewed</p>
-            }
-
-            {/* Image */}
-            {
-                localBentley.imageOne ?
-                <img src={localBentley.imageOne} id="recipe-detail-image"></img>:
-                <p>Image can not be viewed</p>
-            }
+                {/* Model */}
+                {/* {
+                    localBentley.model ?
+                    <p id="car-year">{localBentley.model}</p>:
+                    <p>Description can not be viewed</p>
+                } */}
             
-            {/* Go Back Button */}
-            <button onClick={() => navigate(-1)} id="go-back-button">Back</button>
+                {/* Price */}
+                {/* {
+                    localBentley.price ?
+                    <p id="car-year">{localBentley.price}</p>:
+                    <p>Description can not be viewed</p>
+                } */}
+
+                {/* Description */}
+                {
+                    localBentley.description ?
+                    <p id="car-description">{localBentley.description}</p>:
+                    <p>Description can not be viewed</p>
+                }
+
+                {/* vin */}
+                {
+                    localBentley.vin ?
+                    <p id="car-vin">Vin: {localBentley.vin}</p>:
+                    <p>Vin can not be viewed</p>
+                }
+                
+                {/* Mileage */}
+                {
+                    localBentley.mileage ?
+                    <p id="car-mileage">Mileage: {localBentley.mileage}</p>:
+                    <p>Mileage can not be viewed</p>
+                }
+
+                {/* BodyType */}
+                {
+                    localBentley.bodyType ?
+                    <p id="car-body-type">Body Type: {localBentley.bodyType}</p>:
+                    <p>Body Type can not be viewed</p>
+                }
+                
+                {/* BodyType */}
+                {
+                    localBentley.exteriorColor ?
+                    <p id="car-exterior-color">Exterior Color: {localBentley.exteriorColor}</p>:
+                    <p>Exterior Color can not be viewed</p>
+                }
+
+                {/* Interior Color */}
+                {
+                    localBentley.interiorColor ?
+                    <p id="car-interior-color">Interior Color: {localBentley.interiorColor}</p>:
+                    <p>Interior Color can not be viewed</p>
+                }
+
+                {/* Doors */}
+                {
+                    localBentley.doors ?
+                    <p id="car-doors">Doors: {localBentley.doors}</p>:
+                    <p>Doors can not be viewed</p>
+                }
+            </div>
+            <div className="car-images-container">
+                <div id="car-images-item">
+                    {/* Images */}
+                    {
+                        localBentley.imageOne ?
+                        <img src={localBentley.imageOne} id="car-images-size"></img>:
+                        <p>Image can not be viewed</p>
+                    }
+                    {
+                        localBentley.imageTwo ?
+                        <img src={localBentley.imaget} id="car-images-size"></img>:
+                        <p>Image can not be viewed</p>
+                    }
+                    {
+                        localBentley.imageThree ?
+                        <img src={localBentley.imageThree} id="car-images-size"></img>:
+                        <p>Image can not be viewed</p>
+                    }
+                    {
+                        localBentley.imageFour ?
+                        <img src={localBentley.imageFour} id="car-images-size"></img>:
+                        <p>Image can not be viewed</p>
+                    }
+                    {
+                        localBentley.imageFive ?
+                        <img src={localBentley.imageFive} id="car-images-size"></img>:
+                        <p>Image can not be viewed</p>
+                    }
+                    {
+                        localBentley.imageSix ?
+                        <img src={localBentley.imageSix} id="car-images-size"></img>:
+                        <p>Image can not be viewed</p>
+                    }
+                    {
+                        localBentley.imageSeven ?
+                        <img src={localBentley.imageSeven} id="car-images-size"></img>:
+                        <p>Image can not be viewed</p>
+                    }
+                    {
+                        localBentley.imageEight ?
+                        <img src={localBentley.imageEight} id="car-images-size"></img>:
+                        <p>Image can not be viewed</p>
+                    }
+                </div>
+                
+                {/* Go Back Button */}
+                {/* <button onClick={() => navigate(-1)} id="go-back-button">Back</button> */}
+            </div>
         </div>
     )
 };
