@@ -108,7 +108,7 @@ const FetchForHomepage = () => {
                 console.log("Translated Ferrari Data:", ferrariData);
                 setInventory(ferrariData);
             } catch (error) {
-                console.log ("Error ferari Data!")
+                console.log ("Error ferrari Data!")
                 console.log(error)
             }
         }
