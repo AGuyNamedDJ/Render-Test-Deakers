@@ -438,3 +438,28 @@ p {
     margin: 1vh;
 }
     
+/* News and Events */
+Copy code
+.event-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+
+}
+
+.event-image {
+    display: block;
+    margin: 0 auto;
+    width: 75vw;
+}
+
+.event-text {
+    font-size: 3vh;
+    text-align: center;
+}
+
+#event-subtext {
+    font-size: 2vh;
+    text-align: center;
+    margin-bottom: 1vw;
+}
