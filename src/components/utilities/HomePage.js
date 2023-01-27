@@ -10,8 +10,8 @@ const HomePage = () => {
             </div>
             <div className="hp-text-box">
                 <div id="hp-subtext-box">
-                    <p id="homepage-subtitle">Welcome to</p>
-                    <p id="homepage-title">Car Haven</p>
+                    <p id="homepage-title">Car-Haven</p>
+                    <p id="homepage-subtitle">"A Paradise for Car Enthusiast"</p>
                 </div>
             </div>
         </div>
